@@ -59,4 +59,4 @@ This however does not work for Mac OS users as the `/usr/bin/` and `/usr/share` 
 This is because Macs limit the power of the root account, so that even if you become root, you don't have full control over the system.
 
 ## Troubleshooting
-**If you are unsure of the arguments in the program, locate the 
+**If you are unsure of the arguments in the program, locate the `networkscanner.py` file and type in terminal `python3 networkscanner.py -help` for info on how to use the program** 
