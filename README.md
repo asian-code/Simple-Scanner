@@ -10,6 +10,11 @@ The idea behind this is to help you obtain free airplane,hotel,etc wifi.
 ##Authors and contibutors are not responsible for whatever you do with this tool. <br>
 ##You are responsible for your own actions!
 
+## How to use :question:
+ * **Navigate to the directory** of networkscanner.py and type in terminal `python3 networkscanner.py` <br>
+ or .. <br>
+ * **Click on simple-scanner icon in your app drawer**
+ 
 
 ##  Requirements &nbsp; :unlock:
 
