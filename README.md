@@ -11,9 +11,9 @@ The idea behind this is to help you obtain free airplane,hotel,etc wifi.
 ##You are responsible for your own actions!
 
 ## How to use :question:
- * **Navigate to the directory** of networkscanner.py and type in terminal `python3 networkscanner.py` <br>
- or .. <br>
- * **Click on simple-scanner icon in your app drawer**
+ * The program takes in terminal arguments (not required to run). <br>
+ example :  `python3 networkscanner.py -t 192.168.0.5`<br> 
+ or `python3 networkscanner.py --target 192.168.0.5` 
  
 
 ##  Requirements &nbsp; :unlock:
