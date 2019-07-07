@@ -1,17 +1,16 @@
 
-# ![logo name](http://i67.tinypic.com/huekv8.jpg)
-
+![logo](http://i65.tinypic.com/6swdx0.jpg)
 ------------------------------------------------------------------------
 
-## :airplane: &nbsp; About Aircrack &nbsp; :airplane:
+##   About Simple Scanner  :alien:
 
 This is a small tool which allows for easy accessability to spoofing your MAC Address and scanning IP addresses.
 The idea behind this is to help you obtain free airplane wifi.
 
-![screenshot of tool](http://i64.tinypic.com/335e1pv.png)
-
+'<addr>'
 Authors and contibutors are not responsible for whatever you do with this tool. <br>
 You are responsible for your own actions!
+
 
 ------------------------------------------------------------------------
 
@@ -48,7 +47,7 @@ You can install the program by:
 
 Or by...
 
-**2. Typing in your terminal - `git clone https://www.github.com/lin8x/airline-crack`**
+**2. Typing in your terminal - `git clone https://www.github.com/asian-code/airline-crack`**
 
 *Once finished installing, please type `sudo python3 setup.py` to setup your program.*
 
@@ -83,11 +82,5 @@ Please read ![CONTRIBUTING.md](https://github.com/Lin8x/airline-crack/blob/maste
 You can see ![CHANGESLOG.md](https://github.com/Lin8x/airline-crack/blob/master/CHANGESLOG.md) for details of changes to the tool for each update.
 
 See also the list of contributors who participated in this project.
-
-------------------------------------------------------------------------
-
-## :page_with_curl: &nbsp; License &nbsp; :page_with_curl:
-
-This project is licensed under the GNU General Public License (v3.0) - see the ![LICENSE.md](https://github.com/Lin8x/airline-crack/blob/master/LICENSE) file for details.
 
 ------------------------------------------------------------------------
