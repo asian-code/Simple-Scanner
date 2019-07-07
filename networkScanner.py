@@ -1,3 +1,4 @@
+!#/usr/bin/python
 import scapy.all as scapy
 
 clients = []  # list of devices on network,each element is a Dictionary
