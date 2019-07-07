@@ -30,7 +30,7 @@ Python Library (Pip3):
 
 
 
-## How to Install &nbsp; :inbox_tray:
+## How to Install :inbox_tray:
 
 You can install the program by:
 
@@ -43,7 +43,7 @@ Or by...
 *Once finished installing, please type `sudo python3 setup.py` to setup your program.*
 
 
-## :fire: &nbsp; How to Run &nbsp; :fire:
+## How to Run &nbsp; :fire:
 
 Open the directory to the file: 'simple-scanner' and run the program by typing: 
 `sudo python3 networkScanner.py`
