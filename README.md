@@ -3,8 +3,8 @@
 
 ##   About Simple Scanner  :alien:
 
-This is a small tool which allows for easy accessability to spoofing your MAC Address and scanning IP addresses.
-The idea behind this is to help you obtain free airplane wifi.
+This is a small tool which allows for easy accessability to spoofing your MAC Address(feature coming soon) and scanning IP addresses.
+The idea behind this is to help you obtain free airplane,hotel,etc wifi.
 
 
 ##Authors and contibutors are not responsible for whatever you do with this tool. <br>
@@ -48,7 +48,7 @@ Open the directory to the file: 'simple-scanner' and run the program by typing:
 
 During setup for Linux users, the python program _(core.py and networkScanner.py)_ will go into the directory: `/usr/share/simple-scanner`
 
-As for the bash program, that will allow for running the program with the command 'airline-crack', will go to the directory: `/usr/bin`
+As for the bash program, that will allow for running the program with the command 'simple-scanner', will go to the directory: `/usr/bin`
 
 This however does not work for Mac OS users as the `/usr/bin/` and `/usr/share` ***is not*** accessable even with sudo.
 This is because Macs limit the power of the root account, so that even if you become root, you don't have full control over the system.
