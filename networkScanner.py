@@ -1,7 +1,16 @@
-!#/usr/bin/python
 import scapy.all as scapy
+import optparse
 
 clients = []  # list of devices on network,each element is a Dictionary
+
+
+def get_arguments():
+    parser = optparse.OptionParser()
+    parser.add_option("-t", "--target", dest="target", help="the device or range of devices to scan")
+    options, arguments = parser.parse_args()
+    if options.target is None:
+        options.target = input("* target examples: 192.168.5.1, 192.168.1.1/24  \n[*] Enter target > ")
+    return options.target
 
 
 def scan(ip):
@@ -33,8 +42,7 @@ def write_file(trigger):
             print("[+] Saved results in > /root/Network_Scan.txt")
 
 
-target = input("* target examples: 192.168.0.1, 192.168.1.1/24  \n[*] Enter target > ")
-scan(target)
+scan(get_arguments())
 
 # if user wants to save result to file
 if len(clients) > 0:
