@@ -12,9 +12,7 @@ Authors and contibutors are not responsible for whatever you do with this tool. 
 You are responsible for your own actions!
 
 
-------------------------------------------------------------------------
-
-## :unlock: &nbsp; Requirements &nbsp; :unlock:
+##  Requirements &nbsp; :unlock:
 
 Operating System:
 * ![Mac OS X](www.apple.com)
@@ -37,9 +35,8 @@ Python Library (Pip3):
 * ![scapy](https://pypi.org/project/scapy-python3/)
 * ![lanscan](https://pypi.org/project/lanscan/)
 
-------------------------------------------------------------------------
 
-## :inbox_tray: &nbsp; How to Install &nbsp; :inbox_tray:
+## How to Install &nbsp; :inbox_tray:
 
 You can install the program by:
 
@@ -51,7 +48,6 @@ Or by...
 
 *Once finished installing, please type `sudo python3 setup.py` to setup your program.*
 
-------------------------------------------------------------------------
 
 ## :fire: &nbsp; How to Run &nbsp; :fire:
 
@@ -73,14 +69,4 @@ As for the bash program, that will allow for running the program with the comman
 This however does not work for Mac OS users as the `/usr/bin/` and `/usr/share` ***is not*** accessable even with sudo.
 This is because Macs limit the power of the root account, so that even if you become root, you don't have full control over the system.
 
-------------------------------------------------------------------------
 
-## :star2: &nbsp; Contributing &nbsp; :star2:
-
-Please read ![CONTRIBUTING.md](https://github.com/Lin8x/airline-crack/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-You can see ![CHANGESLOG.md](https://github.com/Lin8x/airline-crack/blob/master/CHANGESLOG.md) for details of changes to the tool for each update.
-
-See also the list of contributors who participated in this project.
-
-------------------------------------------------------------------------
