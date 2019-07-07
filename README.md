@@ -43,7 +43,7 @@ You can install the program by:
 
 Or by...
 
-**2. Typing in your terminal - `git clone https://www.github.com/asian-code/airline-crack`**
+**2. Typing in your terminal - `git clone https://github.com/asian-code/Simple-Scanner`**
 
 *Once finished installing, please type `sudo python3 setup.py` to setup your program.*
 
