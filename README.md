@@ -17,22 +17,12 @@ Operating System:
 * ![Mac OS X](www.apple.com)
 * Linux (Debian/Ubuntu Based: Preferably ![Kali Linux](www.kali.org))
 
-Packages:
-* ![arp-scan](https://linux.die.net/man/1/arp-scan)
-* ![macchanger](https://github.com/alobbs/macchanger)
-* ![nmap](https://nmap.org/)
-* ![ipcalc](https://linux.die.net/man/1/ipcalc)
-* ![aircrack-ng](https://www.aircrack-ng.org/)
-* ![tcpdump](https://www.tcpdump.org/)
-
 Python Library (Pip3):
 * python3
 * pip3
 * ![os](https://docs.python.org/3/library/os.html)
-* ![getmac](https://pypi.org/project/getmac/) >= 0.8.1
-* ![platform](https://docs.python.org/3/library/platform.html)
 * ![scapy](https://pypi.org/project/scapy-python3/)
-* ![lanscan](https://pypi.org/project/lanscan/)
+
 
 
 ## How to Install &nbsp; :inbox_tray:
@@ -50,18 +40,13 @@ Or by...
 
 ## :fire: &nbsp; How to Run &nbsp; :fire:
 
-***For Mac OS X:***
+Open the directory to the file: 'simple-scanner' and run the program by typing: 
+`sudo python3 networkScanner.py`
 
-Open the directory to the file: 'airline-crack' and run the program by typing: 
-`sudo python3 airlinecrack.py`
-
-***For Linux:***
-
-Simply type `airline-crack` in your terminal to run the program.
 
 ##### Setup Information
 
-During setup for Linux users, the python program _(core.py and airlinecrack.py)_ will go into the directory: `/usr/share/airline-crack`
+During setup for Linux users, the python program _(core.py and networkScanner.py)_ will go into the directory: `/usr/share/simple-scanner`
 
 As for the bash program, that will allow for running the program with the command 'airline-crack', will go to the directory: `/usr/bin`
 
