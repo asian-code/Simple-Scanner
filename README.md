@@ -1,15 +1,14 @@
 
 ![logo](http://i65.tinypic.com/6swdx0.jpg)
-------------------------------------------------------------------------
 
 ##   About Simple Scanner  :alien:
 
 This is a small tool which allows for easy accessability to spoofing your MAC Address and scanning IP addresses.
 The idea behind this is to help you obtain free airplane wifi.
 
-'<addr>'
-Authors and contibutors are not responsible for whatever you do with this tool. <br>
-You are responsible for your own actions!
+
+##Authors and contibutors are not responsible for whatever you do with this tool. <br>
+##You are responsible for your own actions!
 
 
 ##  Requirements &nbsp; :unlock:
