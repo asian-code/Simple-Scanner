@@ -52,3 +52,5 @@ If you are unsure of the arguments in the program, locate the `networkscanner.py
 if you no longer need/want to use simple-scan, you can uninstall the program by running the uninstaller tool.<br>
 just locate the direcotry where you installed simplescan and type in terminal :<br>
 `sudo python3 simplescanUninstaller.py` 
+
+<br>
