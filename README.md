@@ -33,7 +33,7 @@ The idea behind this is to help you obtain free airplane,hotel,etc wifi.
 
 You can install the program by:
 
-**1. Download from Github** or **Typing in your terminal** - `git clone https://github.com/asian-code/Simple-Scanner`
+**Download from Github** or **Typing in the Terminal** - `git clone https://github.com/asian-code/Simple-Scanner`
 
 <br>
 
