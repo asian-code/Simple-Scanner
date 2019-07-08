@@ -12,7 +12,7 @@ The idea behind this is to help you obtain free airplane,hotel,etc wifi.
 
 <br>
 
-## How to use
+## How to Use
  * The program takes in terminal arguments (not required to run). <br>
  example :  `python3 networkscanner.py -t 192.168.0.5`<br> 
  or `python3 networkscanner.py --target 192.168.0.5` <br>
