@@ -4,7 +4,8 @@
 ## :alien: &nbsp; About Simple Scanner &nbsp; :alien:
 
 This is a small tool which allows for easy accessability to spoofing your MAC Address(feature coming soon) and scanning IP addresses.
-The idea behind this is to help you obtain free airplane,hotel,etc wifi.
+The idea behind this is to help you obtain free airplane,hotel,etc wifi.<br>
+###[The program is still under development]
 
 ***I AM NOT RESPONSIBLE FOR WHAT YOU DO WITH THIS PROGRAM***
 
