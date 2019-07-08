@@ -50,7 +50,7 @@ Open the directory to the file: 'simple-scanner' and run the program by typing:
 If you are unsure of the arguments in the program, locate the `networkscanner.py` file <br>and type in terminal `python3 networkscanner.py -help` for info on how to use the program
 ## How to remove from system
 if you no longer need/want to use simple-scan, you can uninstall the program by running the uninstaller tool.<br>
-just locate the direcotry where you installed simplescan and type in terminal :<br>
+just locate the folder where you installed simplescan and type in terminal :<br>
 `sudo python3 simplescanUninstaller.py` 
 
 <br>
