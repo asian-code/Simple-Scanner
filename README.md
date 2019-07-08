@@ -46,4 +46,4 @@ Open the directory to the file: 'simple-scanner' and run the program by typing:
 
 ## Troubleshooting
 
-* **If you are unsure of the arguments in the program, locate the `networkscanner.py` file <br>and type in terminal `python3 networkscanner.py -help` for info on how to use the program** 
+If you are unsure of the arguments in the program, locate the `networkscanner.py` file <br>and type in terminal `python3 networkscanner.py -help` for info on how to use the program
