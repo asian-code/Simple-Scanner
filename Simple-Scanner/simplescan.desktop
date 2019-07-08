@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Simple-Scan
+Comment=Activate SimpleScan
+Exec=/usr/bin/simplescan
+Icon=/usr/share/simple-scan/simplescanlogo.png
+Terminal=true
+Type=Application
