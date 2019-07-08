@@ -5,6 +5,6 @@ import time
 
 os.system("rm -rf /usr/share/simple-scan")  # folder
 os.system("rm /usr/share/applications/simplescan.desktop")  # desktop file
-os.system("rm /usr/bin/simplescan.sh")  # bash file
+os.system("rm /usr/bin/simplescan")  # bash file
 time.sleep(3)
 print("[+] Uninstall is complete")
