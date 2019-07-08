@@ -1,4 +1,2 @@
 #!/usr/bin/bash
-#This is the bash file
-
 sudo python3 /usr/share/simple-scan/simplescan.py
