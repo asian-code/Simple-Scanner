@@ -1,17 +1,19 @@
 #!/usr/bin/python
 
-import scanclients
+import networkScanner
+import os
+import sys
 
-rr = '\033[0m'     #reset
+rr = '\033[0m'  # reset
 bold = '\033[01m'
-d = '\033[02m'     #disable
-ul = '\033[04m' #underline
+d = '\033[02m'  # disable
+ul = '\033[04m'  # underline
 reverse = '\033[07m'
-st = '\033[09m' #strikethrough
-invis = '\033[08m'#invisible
+st = '\033[09m'  # strikethrough
+invis = '\033[08m'  # invisible
 white = '\033[0m'
 cwhite = '\33[37m'
-black ='\033[30m'
+black = '\033[30m'
 red = '\033[31m'
 green = '\033[92m'
 orange = '\033[33m'
@@ -38,6 +40,7 @@ br = '\33[108m'
 brown = '\33[33m'
 bwhite = '\33[107'
 
+
 def logo():
     print(lcyan + bold + """
  _____ _                 _        _____                 
@@ -51,26 +54,29 @@ def logo():
     """)
     print(rr + "[" + lcyan + bold + "1" + rr + "] - " + lcyan + "Scan IPs/Devices on Network")
 
+
 def clear():
-  x = 0
-  while x <= 4:
-    os.system("clear")
+    x = 0
+    while x <= 4:
+        os.system("clear")
+
 
 def quit():
-  clear()
-  exit()
+    clear()
+    sys.exit
+
 
 def options():
     try:
-      while True:
-        answer = input("SimpleScan > ")
-        if answer == "1":
-          scanclients.scan(ip)
-        elif answer == "exit" or answer == "quit":
-          quit()
-        else:
-          clear()
-          logo()
-          options()
-    except:
-      quit()
+        while True:
+            answer = input("SimpleScan > ")
+            if answer == "1":
+                networkScanner.main()
+            elif answer.lower() == "exit" or answer.lower() == "quit":
+                quit()
+            else:
+                clear()
+                logo()
+                options()
+    except KeyboardInterrupt:
+        quit()
