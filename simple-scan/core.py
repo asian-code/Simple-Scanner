@@ -59,10 +59,10 @@ def clear():
     x = 0
     while x <= 4:
         os.system("clear")
+        x+=1
 
 
 def quit():
-    clear()
     sys.exit
 
 
