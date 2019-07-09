@@ -17,7 +17,7 @@ try:
     print("[+] moved bash file to /usr/bin")
 
     time.sleep(3)
-
+    print("had Error ="+had_error)
 except:
     had_error = True
     raise
@@ -25,4 +25,4 @@ finally:
     if had_error:
         print("[-] Setup Failed ")
     else:
-        print("[+] Setup is finished,\nyou may run the program by typing : simplescan\nin the terminal)
+        print("[+] Setup is complete")
