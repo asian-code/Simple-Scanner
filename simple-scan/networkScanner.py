@@ -43,19 +43,18 @@ def write_file(trigger):
             print("[+] Saved results in > /root/Network_Scan.txt")
 
 
-scan(get_arguments())
-
-# if user wants to save result to file
-if len(clients) > 0:
-    try:
-        want_saved = input("[*] Save results to a file? (y/n): ")
-        want_saved = want_saved.lower()
-        write_file(want_saved == "y" or want_saved == "yes")
-    except KeyboardInterrupt:
-        # print("\r", end=" ")
-        print(print("[-] Closing the application........"))
-        pass
-    except:
-        print("[-] Error writing to file")
-        raise  # prints out error message without stopping program
-
+def main():
+    scan(get_arguments())
+    # if user wants to save result to file
+    if len(clients) > 0:
+        try:
+            want_saved = input("[*] Save results to a file? (y/n): ")
+            want_saved = want_saved.lower()
+            write_file(want_saved == "y" or want_saved == "yes")
+        except KeyboardInterrupt:
+            # print("\r", end=" ")
+            print(print("[-] Closing the application........"))
+            pass
+        except:
+            print("[-] Error writing to file")
+            raise  # prints out error message without stopping program
