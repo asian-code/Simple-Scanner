@@ -17,7 +17,7 @@ try:
     print("[+] moved bash file to /usr/bin")
 
     time.sleep(3)
-    print("had Error ="+had_error)
+    print("had Error ="+str(had_error))
 except:
     had_error = True
     raise
