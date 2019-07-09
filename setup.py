@@ -23,7 +23,7 @@ try:
     # delete this folder later in uninstaller.py
     folder = save_location.split("/")
     folder.remove("b'")  # this is needed to remove the first element in the list
-    folder[len(folder) - 1] = folder[len(folder) - 1].split("/")[0]
+    folder[len(folder) - 1] = folder[len(folder) - 1].split("\\")[0]
     for i in folder:
         print(i)
     # print(save_location)
