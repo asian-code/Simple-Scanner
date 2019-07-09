@@ -2,6 +2,7 @@
 
 import os
 import time
+os.system("pip3 install scapy")
 
 os.system("sudo mv simple-scan /usr/share")# folder
 print("[+] moved simple-scan folder to /usr/share")
