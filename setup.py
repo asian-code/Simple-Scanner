@@ -25,4 +25,4 @@ finally:
     if had_error:
         print("[-] Setup Failed ")
     else:
-        print("[+] Setup is complet
+        print("[+] Setup is finished,\nyou may run the program by typing : simplescan\nin the terminal)
