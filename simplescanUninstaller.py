@@ -13,7 +13,9 @@ try:
 
     os.system("sudo rm -rf /usr/bin/simplescan")  # bash file
     print("[+] removed bash file /usr/bin/simplescan")
-
+    
+    #removes the folder where simple scan installation folder is located
+    #os.system("sudo rm -rf ")
     time.sleep(3)
 except:
     had_error = True
