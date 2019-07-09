@@ -17,12 +17,11 @@ try:
     print("[+] moved bash file to /usr/bin")
 
     time.sleep(3)
-    print("had Error ="+str(had_error))
 except:
     had_error = True
     raise
 finally:
     if had_error:
-        print("[-] Setup Failed ")
+        print("[-] Setup Failed, an error stopped the setup process ")
     else:
-        print("[+] Setup is complete")
+        print("[+] Setup is complete, no errors!")
