@@ -1,21 +1,27 @@
 #!/usr/bin/python3
 
-import os
+
 import time
+import subprocess
 
 had_error = False
 try:
-    os.system("pip3 install scapy")
+    subprocess.call("pip3 install scapy", shell=True)
 
-    os.system("sudo mv simple-scan /usr/share")  # folder
+    subprocess.call("sudo mv simple-scan /usr/share", shell=True)  # folder
     print("[+] moved simple-scan folder to /usr/share")
 
-    os.system("sudo mv simplescan.desktop /usr/share/applications/")  # .desktop file
+    subprocess.call("sudo mv simplescan.desktop /usr/share/applications/", shell=True)  # .desktop file
     print("[+] moved desktop to /usr/share/applications")
 
-    os.system("sudo mv simplescan /usr/bin")  # bash file
+    subprocess.call("sudo mv simplescan /usr/bin", shell=True)  # bash file
     print("[+] moved bash file to /usr/bin")
 
+    # get current direcotry
+    save_location = str(subprocess.check_output(["pwd"]))
+    # save directory to file in the folder
+    # delete this folder later in uninstaller.py
+    print(save_location)
     time.sleep(3)
 except:
     had_error = True
