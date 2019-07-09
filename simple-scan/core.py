@@ -51,9 +51,11 @@ def logo():
                 /_/                                                          
 
     """)
-    print(rr + "[" + bold + "0" + rr + "] - " + rr + "Exit the program")
-    print(rr + "[" + red + bold + "1" + rr + "] - " + red + "Scan IPs/Devices on Network")
-    print(rr + "[" + orange + bold + "2" + rr + "] - " + orange + "Change Mac address(Comming soon)")
+    print(rr + "[" + red + bold + "0" + rr + "] - " + rr + "Exit the program")
+    print(rr + "[" + orange + bold + "1" + rr + "] - " + rr + "Scan IPs/Devices on Network")
+    print(rr + "[" + yellow + bold + "2" + rr + "] - " + rr + "Change Mac address(Comming soon)")
+
+    print(cyan + " ")
 
 
 def clear():
@@ -70,17 +72,17 @@ def quit():
 def options():
     try:
         while True:
-            answer = input("SimpleScan > ")
+            answer = input(cyan + bold + "SimpleScan > " + rr)
             if answer == "1":
                 networkScanner.main()
             elif answer == "2":
-                print("[-] function comming soon")
+                print(red + bold + "[-] function comming soon")
             elif answer.lower() == "exit" or answer == "0":
                 quit()
             else:
                 clear()
                 logo()
                 options()
-                print("[-] Invalid command")
+                print(red + bold + "[-] Invalid command")
     except KeyboardInterrupt:
         quit()
