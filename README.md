@@ -38,10 +38,11 @@ You can install the program by:
 
 <br>
 
-## How to Run
-
-Open the directory to the file: 'simple-scanner' and run the program by typing: 
-`sudo python3 networkScanner.py`
+## How to Setup
+* *After installing, in terminal type in -*`chmod +x *` (this is needed to let the program get executed)<br>
+* *locate the setup.py file and enter in terminal-* `python3 Setup.py`
+<br>
+* Open the directory to the file: 'simple-scanner' and run the program by typing- `sudo python3 networkScanner.py`
 
 <br>
 
