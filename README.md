@@ -35,13 +35,16 @@ You can install the program by:
 ## How to Setup
 * *After installing, in terminal type in -*`chmod +x *` (this is needed to let the program get executed)<br>
 * *locate the setup.py file and enter in terminal-* `python3 Setup.py`
+
 <br>
+
 ## How to Use
-* Type simplescanner in terminal <br>
+* Type `simplescanner` in terminal <br>
 or...<br>
 * Search for the simple-Scanner icon in your applications
  
 <br>
+
 ## How to remove from system
 if you no longer need/want to use simple-scanner, you can uninstall the program by running the uninstaller tool.<br>
 just locate the folder where you installed simplescan and type in terminal :<br>
