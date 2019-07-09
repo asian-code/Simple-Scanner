@@ -43,27 +43,28 @@ bwhite = '\33[107'
 
 def logo():
     print(lcyan + bold + """
- _____ _                 _        _____                 
-/  ___(_)               | |      /  ___|                
-\ `--. _ _ __ ___  _ __ | | ___  \ `--.  ___ __ _ _ __  
- `--. \ | '_ ` _ \| '_ \| |/ _ \  `--. \/ __/ _` | '_ \ 
-/\__/ / | | | | | | |_) | |  __/ /\__/ / (_| (_| | | | |
-\____/|_|_| |_| |_| .__/|_|\___| \____/ \___\__,_|_| |_|
-                  | |                                   
-                  |_|                              
+   _____ _                 __          _____                                 
+  / ___/(_)___ ___  ____  / /__       / ___/_________ _____  ____  ___  _____
+  \__ \/ / __ `__ \/ __ \/ / _ \______\__ \/ ___/ __ `/ __ \/ __ \/ _ \/ ___/
+ ___/ / / / / / / / /_/ / /  __/_____/__/ / /__/ /_/ / / / / / / /  __/ /    
+/____/_/_/ /_/ /_/ .___/_/\___/     /____/\___/\__,_/_/ /_/_/ /_/\___/_/     
+                /_/                                                          
+
     """)
-    print(rr + "[" + lcyan + bold + "1" + rr + "] - " + lcyan + "Scan IPs/Devices on Network")
+    print(rr + "[" + bold + "0" + rr + "] - " + rr + "Exit the program")
+    print(rr + "[" + red + bold + "1" + rr + "] - " + red + "Scan IPs/Devices on Network")
+    print(rr + "[" + orange + bold + "2" + rr + "] - " + orange + "Change Mac address(Comming soon)")
 
 
 def clear():
     x = 0
     while x <= 4:
         os.system("clear")
-        x+=1
+        x += 1
 
 
 def quit():
-    sys.exit
+    sys.exit()
 
 
 def options():
@@ -72,11 +73,14 @@ def options():
             answer = input("SimpleScan > ")
             if answer == "1":
                 networkScanner.main()
-            elif answer.lower() == "exit" or answer.lower() == "quit":
+            elif answer == "2":
+                print("[-] function comming soon")
+            elif answer.lower() == "exit" or answer == "0":
                 quit()
             else:
                 clear()
                 logo()
                 options()
+                print("[-] Invalid command")
     except KeyboardInterrupt:
         quit()
