@@ -21,7 +21,10 @@ try:
     save_location = str(subprocess.check_output(["pwd"]))
     # save directory to file in the folder
     # delete this folder later in uninstaller.py
-    print(save_location)
+    folder = save_location.split("/")
+    for i in folder:
+        print(i)
+    # print(save_location)
     time.sleep(3)
 except:
     had_error = True
