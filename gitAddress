@@ -1,3 +1,4 @@
 #!/usr/bin/bash
+echo [*] Installing Simple-scanner...
 cd /root
 sudo git clone https://github.com/asian-code/Simple-Scanner.git
