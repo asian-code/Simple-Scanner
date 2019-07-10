@@ -41,7 +41,7 @@ try:
     subprocess.call("sudo mv simplescan.desktop /usr/share/applications/", shell=True)  # .desktop file
     print("[+] moved desktop to /usr/share/applications")
 
-    subprocess.call("sudo mv simplescan /usr/bin", shell=True)  # bash file
+    subprocess.call("sudo mv simplescanner /usr/bin", shell=True)  # bash file
     print("[+] moved bash file to /usr/bin")
 
     save_folder_location(get_current_dir())
