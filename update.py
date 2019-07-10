@@ -5,14 +5,18 @@ import sys
 
 had_error = False
 original_location = ""
-
+red = '\033[31m'
+green = '\033[92m'
+rr = '\033[0m'  # reset
+bold = '\033[01m'
 try:
     if os.path.exists("location.txt") == False:
         raise Exception("Missing location.txt file")
     else:
         print("location.txt is located")
 except:
-    print("[!] Error -Simple scan was never properly installed to update,\n\tMissing location.txt file")
+    print(
+        red + bold + "[!] Error -Simple scan was never properly installed to update,\n\tMissing location.txt file" + rr)
     sys.exit()
 
 file = open("location.txt", "r")
@@ -22,7 +26,7 @@ file.close()
 old_location = location.split("/")
 old_location.pop(0)  # remove first element (empty element)
 original_location = old_location.pop()  # remove last element (name of installation folder)
-print("pop of last element :"+original_location)
+original_location = original_location.split("\\")[0]  # removes the \n inside the string
 
 install_location = ""
 for i in old_location:
@@ -35,7 +39,7 @@ try:
     # installs new version
     subprocess.call("./gitAddress", shell=True)
     time.sleep(2)
-    print("[ OK ] Installed new version of Simple-Scanner")
+    print(green + bold + "[ OK ] Installed new version of Simple-Scanner" + rr)
 
     # uninstalls current version
     print("[+] Uninstalling old version of Simple Scanner")
@@ -54,6 +58,6 @@ except:
 
 finally:
     if had_error:
-        print("[!] Error updating Simple-Scanner")
+        print(+red + bold + "[!] Error updating Simple-Scanner" + rr)
     else:
-        print("[ OK ] Update complete!!\n")
+        print(green + bold + "[ OK ] Update complete!!\n" + rr)
