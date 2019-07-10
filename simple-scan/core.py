@@ -51,13 +51,11 @@ def logo():
                 /_/                                                          
 
     """)
-    print(
-        white + bold + "{" + yellow + "# Created by asian-code #" + white + bold +
-        "}\tEnjoy " + cyan + bold + ":)\n" + green + "[Special thanks to Lin8x]")
-
-    print(rr + "[" + red + bold + "0" + rr + "] - " + red + bold+"Exit " + rr + "the program")
-    print(rr + "[" + green + bold + "1" + rr + "] - " + rr + "Scan IPs/Devices on Network")
-    print(rr + "[" + blue + bold + "2" + rr + "] - " + rr + "Change Mac address(Comming soon)")
+    print("https://www.github.com/asian-code/simple-scanner")
+    
+    print(rr + "(" + cyan + bold + "1" + rr + ") - " + rr + "Scan IPs/Devices on Network")
+    print(rr + "(" + cyan + bold + "2" + rr + ") - " + rr + "Change Mac address(Comming soon)")
+    print(rr + "(" + cyan + bold + "99" + rr + ") - " + rr + "Exit the program")
 
 
 def clear():
@@ -74,17 +72,17 @@ def quit():
 def options():
     try:
         while True:
-            answer = input(cyan + bold + "Simple-Scanner > " + rr)
-            if answer == "1":
-                networkScanner.main()
-            elif answer == "2":
-                print(red + bold + "[-] function comming soon")
-            elif answer.lower() == "exit" or answer == "0":
+            try:
+                answer = input(cyan + bold + "Simple-Scanner > " + rr)
+                if answer == "1":
+                    networkScanner.main()
+                elif answer == "2":
+                    print(red + bold + "[-] function comming soon")
+                elif answer.lower() == "exit" or answer == "99":
+                    quit()
+                else:
+                    print(red + bold + "\n[-] Invalid command: " + answer + "\n")
+            except KeyboardInterrupt:
                 quit()
-            else:
-                clear()
-                logo()
-                options()
-                print(red + bold + "[-] Invalid command")
     except KeyboardInterrupt:
         quit()
