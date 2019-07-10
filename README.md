@@ -3,8 +3,8 @@
 
 ## :alien: &nbsp; About Simple Scanner &nbsp; :alien:
 
-This is a small tool which allows for easy accessability to spoofing your MAC Address(feature coming soon) and scanning IP addresses.
-The idea behind this is to help you obtain free airplane,hotel,etc wifi.<br>
+This is a small tool which allows for easy accessability to spoofing your MAC Address(feature coming soon) ,scanning IP addresses,and stealthy port scanning(feature coming soon).
+
 ### [The program is still under development]
 
 ***I AM NOT RESPONSIBLE FOR WHAT YOU DO WITH THIS PROGRAM***
@@ -13,7 +13,7 @@ The idea behind this is to help you obtain free airplane,hotel,etc wifi.<br>
 
 ##  Requirements
 
-* Unix system (recommend Ubuntu)
+* Unix system (recommend Ubuntu or Kali linux)
 * python3 + pip3
 #### Python modules
 * os
@@ -34,7 +34,7 @@ You can install the program by:
 
 ## How to Setup
 * *After installing, in terminal type in -*`chmod +x *` (this is needed to let the program get executed)<br>
-* *locate the setup.py file and enter in terminal-* `python3 Setup.py`
+* *locate the setup.py file and enter in terminal-* `python3 setup.py`
 
 <br>
 
