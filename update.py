@@ -42,16 +42,15 @@ for i in old_location:
 
 print("[+] Location to install: " + new_location)
 try:
+    # installs new version
+    subprocess.call("./gitAddress", shell=True)
+    time.sleep(2)
+    
     # uninstalls current version
     subprocess.call("sudo python3 uninstaller.py", shell=True)
 
-    # installs new version
-    # subprocess.call("cd {}".format(new_location), shell=True)
-    print("installing from github Python message")
-    # subprocess.call("git clone https://github.com/asian-code/Simple-Scanner.git",shell=True)  # move downloaded file to original location
-    subprocess.call("./gitAddress", shell=True)
-    time.sleep(2)
-    print("installed the latest version of Simplescanner")
+    
+   
     # curr_location = get_current_dir()
     # print("current location:" + curr_location)
 
