@@ -35,7 +35,7 @@ for i in old_location:
 original_location = install_location + "/" + original_location
 
 print(
-    green + bold + "[+] Original file location:" + original_location + "[+] Location to install: " + install_location + rr)
+    green + bold + "[+] Original file location:" + original_location + "\n[+] Location to install: " + install_location + rr)
 try:
     # installs new version
     subprocess.call("./gitAddress", shell=True)
@@ -50,7 +50,7 @@ try:
     print("moving new installation folder to old installation folder location")
     subprocess.call("sudo mv /usr/var/Simple-Scanner {}".format(install_location), shell=True)
 
-    # os.chmod(location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
+    os.chmod(original_location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
 
     subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
     time.sleep(2)
