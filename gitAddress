@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 echo [*] Installing latest version of Simple-scanner
-cd /usr/share
+cd /usr/var
 sudo git clone https://github.com/asian-code/Simple-Scanner.git
