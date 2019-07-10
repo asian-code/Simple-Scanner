@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import os
-import time
 
 had_error = False
 try:
@@ -15,16 +14,19 @@ try:
     print("[+] removed bash file /usr/bin/simplescan")
 
     # removes the folder where simple scan installation folder is located
-    file = open("location.txt", "r")
-    location = file.readlines()[0]
-    os.system("sudo rm -rf {}".format(location))
+    try:
+        file = open("location.txt", "r")
+        location = file.readlines()[0]
+        os.system("sudo rm -rf {}".format(location))
+    except:
+        had_error=True
+        print("[!] Error-Unable to find location.txt")
 
-    time.sleep(3)
 except:
     had_error = True
     raise
 finally:
     if had_error:
-        print("[-] Unable to uninstall Simple-scan due to an error")
+        print("[!] Unable to uninstall Simple-scan due to an error")
     else:
-        print("[+] Uninstall is complete, no errors !")
+        print("[ OK ] Uninstall is complete, no errors !")
