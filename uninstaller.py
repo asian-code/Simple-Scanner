@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 import os
-
+red = '\033[31m'
+green = '\033[92m'
+rr = '\033[0m'  # reset
+bold = '\033[01m'
 had_error = False
 try:
     os.system("sudo rm -rf /usr/share/simple-scan")  # folder
@@ -27,6 +30,6 @@ except:
     raise
 finally:
     if had_error:
-        print("[!] Unable to uninstall Simple-scan due to an error")
+        print(red+bold+"[!] Unable to uninstall Simple-scan due to an error"+rr)
     else:
-        print("[ OK ] Uninstall is complete, no errors !")
+        print(green+bold+"[ OK ] Uninstall is complete, no errors !"+rr)
