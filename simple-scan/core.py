@@ -51,7 +51,7 @@ def logo():
                 /_/                                                          
 
     """)
-    print("https://www.github.com/asian-code/simple-scanner")
+    print(ul+lcyan+"https://www.github.com/asian-code/Simple-Scanner")
     
     print(rr + "(" + cyan + bold + "1" + rr + ") - " + rr + "Scan IPs/Devices on Network")
     print(rr + "(" + cyan + bold + "2" + rr + ") - " + rr + "Change Mac address(Comming soon)")
