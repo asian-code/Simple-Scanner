@@ -29,7 +29,7 @@ for i in old_location:
 
 original_location = install_location + "/" + original_location
 
-print("[!] Original file location:" + original_location + "\n[+] Location to install: " + install_location)
+print("[!] Original file location:" + original_location + "[+] Location to install: " + install_location)
 try:
     # installs new version
     subprocess.call("./gitAddress", shell=True)
