@@ -45,15 +45,15 @@ try:
     # installs new version
     subprocess.call("./gitAddress", shell=True)
     time.sleep(2)
-    
+
     # uninstalls current version
+    print("[+] Uninstalling old version of Simple Scanner")
     subprocess.call("sudo python3 uninstaller.py", shell=True)
 
+    # move new version to the location of old installation folder
+    print("moving new installation folder to old installation folder location")
+    subprocess.call("sudo mv /usr/var/Simple-Scanner {}".format(new_location), shell=True)
     
-   
-    # curr_location = get_current_dir()
-    # print("current location:" + curr_location)
-
     # os.chmod(location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH) # chmod
 
     # subprocess.call("sudo python3 setup.py", shell=True)#setup new version
