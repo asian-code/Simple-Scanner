@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import subprocess
-import os
+import os, time
 import sys
 
 had_error = False
@@ -47,9 +47,13 @@ try:
 
     # installs new version
     # subprocess.call("cd {}".format(new_location), shell=True)
-    subprocess.call("git clone https://github.com/asian-code/Simple-Scanner.git", shell=True)
-    curr_location = get_current_dir()
-    print("current location:" + curr_location)
+    print("installing from github Python message")
+    # subprocess.call("git clone https://github.com/asian-code/Simple-Scanner.git",shell=True)  # move downloaded file to original location
+    subprocess.call("./gitAddress", shell=True)
+    time.sleep(2)
+    print("installed the latest version of Simplescanner")
+    # curr_location = get_current_dir()
+    # print("current location:" + curr_location)
 
     # os.chmod(location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH) # chmod
 
