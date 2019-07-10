@@ -2,6 +2,7 @@
 import subprocess
 import os
 import sys
+
 had_error = False
 try:
     if os.path.exists("location.txt") == False:
@@ -33,8 +34,10 @@ try:
     subprocess.call("git clone https://github.com/asian-code/Simple-Scanner.git", shell=True)
 
     subprocess.call("cd {}".format(location), shell=True)
-    # Add chmod +x *
+    # Add chmod
+    os.chmod(location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)
     # run setup.py
+    subprocess.call("sudo python3 setup.py", shell=True)
 except:
     had_error = True
 
