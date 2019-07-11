@@ -1,14 +1,12 @@
 
 ![logo](http://i64.tinypic.com/35d7muw.png)
 
-## :alien: &nbsp; About Simple Scanner &nbsp; :alien:
+## :alien: &nbsp; About Simple Scanner &nbsp; :alien: (Under development)
 
 This is a small tool which allows for easy accessability to :<br>
 * **spoofing your MAC Address -(feature coming soon)**<br>
 * **scanning IP addresses in your network**<br>
 * **stealthy port scanning -(feature coming soon)**
-
-### [The program is still under development]
 
 ***I AM NOT RESPONSIBLE FOR WHAT YOU DO WITH THIS PROGRAM***
 
@@ -24,6 +22,7 @@ This is a small tool which allows for easy accessability to :<br>
 * subprocess
 * time
 * sys
+* platform
 
 <br>
 
