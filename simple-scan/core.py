@@ -48,9 +48,9 @@ def logo():
   \__ \/ / __ `__ \/ __ \/ / _ \______\__ \/ ___/ __ `/ __ \/ __ \/ _ \/ ___/
  ___/ / / / / / / / /_/ / /  __/_____/__/ / /__/ /_/ / / / / / / /  __/ /    
 /____/_/_/ /_/ /_/ .___/_/\___/     /____/\___/\__,_/_/ /_/_/ /_/\___/_/     
-                /_/  Created by asian-code                                                        
-        """+ul+"https://www.github.com/asian-code/Simple-Scanner""+rr+"\n
-        \t\t(Special thanks to lin8x)")
+                /_/  Created by asian-code
+                   (Special thanks to lin8x)""")
+    print(ul+"https://www.github.com/asian-code/Simple-Scanner")
 
     print(rr + "(" + cyan + bold + "1" + rr + ")\t- " + rr + "Scan IPs/Devices on Network")
     print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Port scanner(Comming soon)")
