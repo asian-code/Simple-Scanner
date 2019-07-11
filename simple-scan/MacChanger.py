@@ -65,6 +65,4 @@ def main():
         else:
             print(green + bold + "[ OK ] Change Complete " + rr)
     else:
-
-
-print(red + bold + "[!] Error - Could not find MAC address for this interface" + rr)
+        print(red + bold + "[!] Error - Could not find MAC address for this interface" + rr)
