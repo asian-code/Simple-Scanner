@@ -52,12 +52,13 @@ def logo():
 
     """)
     print(ul+lcyan+"https://www.github.com/asian-code/Simple-Scanner")
-    print(ul+lcyan+"Special thanks to lin8x for helping make the tool")
+    print(+cyan+"(Special thanks to lin8x)")
     
-    print(rr + "(" + cyan + bold + "1" + rr + ") - " + rr + "Scan IPs/Devices on Network")
-    print(rr + "(" + cyan + bold + "2" + rr + ") - " + rr + "Scan IPs + Port scanner(Comming soon)")
-    print(rr + "(" + cyan + bold + "3" + rr + ") - " + rr + "Change Mac address(Comming soon)")
-    print(rr + "(" + cyan + bold + "99" + rr + ") - " + rr + "Exit the program")
+    print(rr + "(" + cyan + bold + "1" + rr + ")\t- " + rr + "Scan IPs/Devices on Network")
+    print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Port scanner(Comming soon)")
+    print(rr + "(" + cyan + bold + "3" + rr + ")\t- " + rr + "Change Mac address(Comming soon)")
+    print(rr + "(" + cyan + bold + "clear" + rr + ")\t- " + rr + "Clear screen")
+    print(rr + "(" + cyan + bold + "99" + rr + ")\t- " + rr + "Exit the program")
 
 
 def clear():
@@ -78,10 +79,15 @@ def options():
                 answer = input(cyan + bold + "Simple-Scanner > " + rr)
                 if answer == "1":
                     networkScanner.main()
+                elif answer=="2":
+                    print(rr + bold + "[-] function comming soon"+rr)
                 elif answer == "3":
-                    print(red + bold + "[-] function comming soon")
+                    print(rr + bold + "[-] function comming soon"+rr)
                 elif answer.lower() == "exit" or answer == "99":
                     quit()
+                elif answer=="clear":
+                    clear()
+                    logo()
                 else:
                     print(red + bold + "[-] Invalid command: " +rr+ answer )
             except KeyboardInterrupt:
