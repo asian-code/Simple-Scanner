@@ -5,7 +5,10 @@ import time
 import subprocess
 
 had_error = False
-
+red = '\033[31m'
+green = '\033[92m'
+rr = '\033[0m'  # reset
+bold = '\033[01m'
 
 def get_current_dir():
     save_location = str(subprocess.check_output(["pwd"]))
@@ -25,7 +28,7 @@ def save_folder_location(location):
         file = open(location + "/location.txt", "w")
         file.write(location)
     except:
-        print("[-] Error writing to file")
+        print(red+bold+"[!] Error writing to file"+rr)
         had_error = True
         raise
     finally:
@@ -52,6 +55,6 @@ except:
     raise
 finally:
     if had_error:
-        print("[-] Setup Failed, an error stopped the setup process ")
+        print(red+bold+"[-] Setup Failed, an error stopped the setup process "+rr)
     else:
-        print("[+] Setup is complete, no errors!")
+        print(green+bold+"[+] Setup is complete, no errors!"+rr)
