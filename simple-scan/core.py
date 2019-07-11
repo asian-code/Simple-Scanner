@@ -49,7 +49,7 @@ def logo():
  ___/ / / / / / / / /_/ / /  __/_____/__/ / /__/ /_/ / / / / / / /  __/ /    
 /____/_/_/ /_/ /_/ .___/_/\___/     /____/\___/\__,_/_/ /_/_/ /_/\___/_/     
                 /_/  Created by asian-code                                                        
-        https://www.github.com/asian-code/Simple-Scanner
+        """+ul+"""https://www.github.com/asian-code/Simple-Scanner"""+lcyan+bold+"""
                    (Special thanks to lin8x)
     """)
 
@@ -82,7 +82,7 @@ def options():
                     print(rr + bold + "[-] function comming soon"+rr)
                 elif answer == "3":
                     print(rr + bold + "[-] function comming soon"+rr)
-                elif answer.lower() == "exit" or answer == "99":
+                elif answer.lower() == "exit" or answer == "99" or answer.lower()=="quit":
                     quit()
                 elif answer=="clear":
                     clear()
