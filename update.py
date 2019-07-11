@@ -32,27 +32,34 @@ install_location = ""
 for i in old_location:
     install_location += "/{}".format(i)
 
-original_location = install_location + "/" + original_location
+original_location = str(install_location + "/" + original_location)
 
 print(
     green + bold + "[+] Original file location:" + original_location + "\n[+] Location to install: " + install_location + rr)
 try:
     # installs new version
     subprocess.call("./gitAddress", shell=True)
-    time.sleep(2)
+    time.sleep(3)
     print(green + bold + "[ OK ] Installed new version of Simple-Scanner" + rr)
 
     # uninstalls current version
     print("[+] Uninstalling old version of Simple Scanner")
     subprocess.call("sudo python3 uninstaller.py", shell=True)
 
+    time.sleep(2)
     # move new version to the location of old installation folder
     subprocess.call("sudo mv /usr/var/Simple-Scanner {}".format(install_location), shell=True)
 
-    # os.chmod(original_location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
-    subprocess.call("sudo chmod +x {}".format(original_location), shell=True)
-    subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
     time.sleep(2)
+    # os.chmod(original_location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
+    print("TRYING CHMOD")
+    subprocess.call("cd "+original_location, shell=True)
+    subprocess.call("sudo chmod +x *", shell=True)
+
+    time.sleep(2)
+    #setup the program for the user
+    # subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
+
 except:
     had_error = True
 
