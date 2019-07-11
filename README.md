@@ -58,6 +58,7 @@ or...<br>
 2. *In terminal type in - `sudo python3 simplescan.py`*
  
 <br>
+
 ## How to update to latest version
 If you feel like the current Simple scanner you have installed is not up to date. Follow these steps below:
 #### For linux users 
@@ -65,7 +66,7 @@ If you feel like the current Simple scanner you have installed is not up to date
 1. *by navigating to the folder you installed Simple-Scanner*
 2. *Type in terminal-`sude python3 update.py`*
 ### For Mac users
-##### **[ ! ]**Mac has restrictions that prevent access to file locations even if your account has root
+##### **[ ! ]** Mac has restrictions that prevent access to file locations even if your account has root
 
 <br> 
 
@@ -73,7 +74,7 @@ If you feel like the current Simple scanner you have installed is not up to date
 If you no longer need/want to use simple-scanner, you can uninstall the program
 #### For linux users:
  * Run the uninstaller tool.<br>
-just locate the folder where you installed simplescan and type in terminal :<br>
+just locate the folder where you installed Simple-Scanner and type in terminal :<br>
 `sudo python3 uninstaller.py` 
 #### For Mac users:
 1. *Navigating to the location where you installed Simple-Scanner*
