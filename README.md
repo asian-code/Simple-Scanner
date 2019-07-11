@@ -45,6 +45,7 @@ You can install the program by:
 
 ## How to Use
 #### For Linux users:
+After running setup.py - it will configure and download all necessary packages/modules needed for the program to run 
 * Type `simplescanner` in terminal <br>
 or...<br>
 * Search for the simple-Scanner icon in your applications<br>
@@ -61,7 +62,7 @@ If you feel like the current Simple scanner you have installed is not up to date
 1. *by navigating to the folder you installed Simple-Scanner*
 2. *Type in terminal-`sude python3 update.py`*
 ### For Mac users
-##### **[ ! ]** Mac has restrictions that prevent access to file locations even if your account has root<br>
+##### **[ ! ]** Mac has restrictions that prevent access to file locations even if your account is root<br>
 * *Only option is to delete the program and reinstall manually*
 
 <br> 
