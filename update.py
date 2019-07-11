@@ -60,9 +60,9 @@ try:
     time.sleep(4)
     # setup the program for the user
     print("[+] Running setup.py in - {}/setup.py".format(original_location))
-    os.chdir(original_location)
-    print("Current directory:" + subprocess.check_output("pwd"))
-    # subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
+
+    # setup new version
+    subprocess.call("sudo python3 setup.py", shell=True, cwd=original_location)  # cwd changes process directory
 
 except:
     had_error = True
