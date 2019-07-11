@@ -28,26 +28,43 @@ This is a small tool which allows for easy accessability to spoofing your MAC Ad
 
 You can install the program by:
 
-**Download from Github** or **Typing in the Terminal** - `git clone https://github.com/asian-code/Simple-Scanner`
+**Download from Github** or **Typing in the Terminal** - `git clone https://github.com/asian-code/Simple-Scanner`<br>
+##### *Tip:* -Please note the location where you installed Simple-Scanner<br>
 
 <br>
 
 ## How to Setup
-* *After installing, in terminal type in -*`chmod +x *` (this is needed to let the program get executed)<br>
-* *locate the setup.py file and enter in terminal-* `python3 setup.py`
+1. *After installing, in terminal navigate to the Simple-Scanner folder*
+2. *In terminal type in -*`chmod +x *` (this is needed to let the program get executed)<br>
+#### For linux users:
+* *Locate the setup.py file and enter in terminal-* `sudo python3 setup.py`<br>
+#### For Mac users:
+* **[ ! ]** *Mac systems have restrictions that wont allow setup.py , uninstaller.py , and update.py to work properly.*<br>
+##### Mac users can run the application directly by<br>
+* *Navigating to the location where you installed Simple-Scanner/simple-scan*
+* *In terminal type in - `sudo python3 simplescan.py`*
 
 <br>
 
 ## How to Use
+#### For linux users:
 * Type `simplescanner` in terminal <br>
 or...<br>
-* Search for the simple-Scanner icon in your applications
+* Search for the simple-Scanner icon in your applications<br>
+#### For Mac users:
+* *Navigating to the location where you installed Simple-Scanner/simple-scan*
+* *In terminal type in - `sudo python3 simplescan.py`*
  
 <br>
 
 ## How to remove from system
-if you no longer need/want to use simple-scanner, you can uninstall the program by running the uninstaller tool.<br>
+If you no longer need/want to use simple-scanner, you can uninstall the program
+#### For linux users:
+ * Run the uninstaller tool.<br>
 just locate the folder where you installed simplescan and type in terminal :<br>
 `sudo python3 uninstaller.py` 
+#### For Mac users:
+* *Navigating to the location where you installed Simple-Scanner*
+* *Delete the Simple-Scanner folder*
 
 <br>
