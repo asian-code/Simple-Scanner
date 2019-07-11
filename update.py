@@ -49,17 +49,19 @@ try:
     time.sleep(2)
     # move new version to the location of old installation folder
     subprocess.call("sudo mv /usr/var/Simple-Scanner {}".format(install_location), shell=True)
-    print(green+bold+"[+] Moved new files to correct location"+rr)
+    print(green + bold + "[+] Moved new files to correct location" + rr)
 
-    #time.sleep(2)
+    # time.sleep(2)
     # os.chmod(original_location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
-    #print("TRYING CHMOD")
-    #subprocess.call("cd "+original_location, shell=True)
-    #subprocess.call("sudo chmod +x *", shell=True)
+    # print("TRYING CHMOD")
+    # subprocess.call("cd "+original_location, shell=True)
+    # subprocess.call("sudo chmod +x *", shell=True)
 
-    time.sleep(2)
-    #setup the program for the user
+    time.sleep(4)
+    # setup the program for the user
     print("[+] Running setup.py in - {}/setup.py".format(original_location))
+    subprocess.call("cd " + original_location)
+    print("Current directory:" + subprocess.check_output("pwd"))
     subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
 
 except:
