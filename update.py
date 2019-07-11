@@ -52,9 +52,9 @@ try:
 
     time.sleep(2)
     # os.chmod(original_location, os.stat.S_IXUSR | os.stat.S_IXGRP | os.stat.S_IXOTH)  # chmod
-    print("TRYING CHMOD")
-    subprocess.call("cd "+original_location, shell=True)
-    subprocess.call("sudo chmod +x *", shell=True)
+    #print("TRYING CHMOD")
+    #subprocess.call("cd "+original_location, shell=True)
+    #subprocess.call("sudo chmod +x *", shell=True)
 
     time.sleep(2)
     #setup the program for the user
