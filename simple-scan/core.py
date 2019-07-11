@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import networkScanner
+import networkScanner,MacChanger
 import os
 import sys
 
@@ -55,7 +55,7 @@ def logo():
 
     print(rr + "(" + cyan + bold + "1" + rr + ")\t- " + rr + "Scan IPs/Devices on Network")
     print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Ports(Comming soon)")
-    print(rr + "(" + cyan + bold + "3" + rr + ")\t- " + rr + "Change Mac address(Comming soon)")
+    print(rr + "(" + cyan + bold + "3" + rr + ")\t- " + rr + "Change Mac address")
     print(rr + "(" + cyan + bold + "clear" + rr + ")\t- " + rr + "Clear screen")
     print(rr + "(" + cyan + bold + "99" + rr + ")\t- " + rr + "Exit the program")
 
@@ -81,7 +81,7 @@ def options():
                 elif answer=="2":
                     print(rr + bold + "[-] function comming soon"+rr)
                 elif answer == "3":
-                    print(rr + bold + "[-] function comming soon"+rr)
+                    MacChanger.main()
                 elif answer.lower() == "exit" or answer == "99" or answer.lower()=="quit":
                     quit()
                 elif answer=="clear":
