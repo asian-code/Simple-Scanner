@@ -2,15 +2,18 @@
 import subprocess  # cmd commands module
 import optparse  # external input with script through cmd EXAMPLE: macChanger.py -i eth0 -m 00:11:22:33:44:55
 import re  # regular expression
-
+red = '\033[31m'
+green = '\033[92m'
+rr = '\033[0m'  # reset
+bold = '\033[01m'
 
 # my Original mac eth0: 08:00:27:89:03:db
 
 def show_info(interface="None", new_mac="None"):
-    txt = "--------------------------------- \n" \
+    txt = green+bold+"--------------------------------- \n" \
           "| Interface  >  {}\n" \
           "| New Mac    >  {}\n" \
-          "--------------------------------- \n"
+          "--------------------------------- \n"+rr
     print(txt.format(interface, new_mac))
 
 
@@ -56,10 +59,10 @@ def main():
         print(" Current MAC address > " + get_mac(value.inface))
         change_mac(value.inface, value.nmac)
         if old_mac == get_mac(value.inface):
-            print("[-] Error Changing the MAC address, Old MAC and new MAC are the same")
+            print(red+bold+"[-] Error Changing the MAC address, Old MAC and new MAC are the same"+rr)
         else:
-            print("[+] Change Complete ")
+            print(green+bold+"[ OK ] Change Complete "+rr)
     else:
-        print("[-] Error - Could not find MAC address for this interface")
+        print(red+bold+"[!] Error - Could not find MAC address for this interface"+rr)
 
 # print(type(get_args()))
