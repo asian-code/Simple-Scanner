@@ -18,13 +18,6 @@ This is a small tool which allows for easy accessability to :<br>
 
 * Unix system (recommend Ubuntu or Kali linux)
 * python3 + pip3
-#### Python modules
-* os
-* scapy
-* subprocess
-* time
-* sys
-* platform
 
 <br>
 
