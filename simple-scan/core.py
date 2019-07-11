@@ -49,11 +49,12 @@ def logo():
  ___/ / / / / / / / /_/ / /  __/_____/__/ / /__/ /_/ / / / / / / /  __/ /    
 /____/_/_/ /_/ /_/ .___/_/\___/     /____/\___/\__,_/_/ /_/_/ /_/\___/_/     
                 /_/  Created by asian-code
+                
                    (Special thanks to lin8x)""")
     print(rr+ul+cyan+"\thttps://www.github.com/asian-code/Simple-Scanner")
 
     print(rr + "(" + cyan + bold + "1" + rr + ")\t- " + rr + "Scan IPs/Devices on Network")
-    print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Port scanner(Comming soon)")
+    print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Ports(Comming soon)")
     print(rr + "(" + cyan + bold + "3" + rr + ")\t- " + rr + "Change Mac address(Comming soon)")
     print(rr + "(" + cyan + bold + "clear" + rr + ")\t- " + rr + "Clear screen")
     print(rr + "(" + cyan + bold + "99" + rr + ")\t- " + rr + "Exit the program")
