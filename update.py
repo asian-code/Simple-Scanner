@@ -58,7 +58,7 @@ try:
 
     time.sleep(2)
     #setup the program for the user
-    # subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
+    subprocess.call("sudo python3 {}/setup.py".format(original_location), shell=True)  # setup new version
 
 except:
     had_error = True
