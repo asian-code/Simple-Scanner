@@ -79,6 +79,9 @@ def options():
                 if answer == "1":
                     networkScanner.main()
                 elif answer=="2":
+                    devices=networkScanner.main()
+                    for i in devices:
+                        print(devices["ip"])
                     print(rr + bold + "[-] function comming soon"+rr)
                 elif answer == "3":
                     MacChanger.main()
