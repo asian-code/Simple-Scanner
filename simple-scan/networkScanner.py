@@ -58,3 +58,4 @@ def main():
         except:
             print("[-] Error writing to file")
             raise  # prints out error message without stopping program
+        return clients
