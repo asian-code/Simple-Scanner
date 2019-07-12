@@ -14,7 +14,7 @@ def get_arguments():
     return options.target
 
 
-def scan(ip):
+def scan(ip, verbose=True):
     request = scapy.ARP(pdst=ip)
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")  # broadcast Mac address
     arp_request_packet = broadcast / request  # create ARP request packet
@@ -27,9 +27,11 @@ def scan(ip):
     for element in answered_list:  # get the info from list returned from scapy
         client = {"ip": element[1].psrc, "mac": element[1].hwsrc}
         clients.append(client)
-        print(element[1].psrc + "\t\t" + element[1].hwsrc)
+        if verbose:
+            print(element[1].psrc + "\t\t" + element[1].hwsrc)
         # print(element[1].show())
-    print("-" * 50)
+    if verbose:
+        print("-" * 50)
 
 
 def write_file(trigger):
@@ -43,19 +45,21 @@ def write_file(trigger):
             print("[+] Saved results in > /root/Network_Scan.txt")
 
 
-def main():
-    scan(get_arguments())
-    # if user wants to save result to file
-    if len(clients) > 0:
-        try:
-            want_saved = input("[*] Save results to a file? (y/n): ")
-            want_saved = want_saved.lower()
-            write_file(want_saved == "y" or want_saved == "yes")
-        except KeyboardInterrupt:
-            # print("\r", end=" ")
-            print(print("[-] Closing the application........"))
-            pass
-        except:
-            print("[-] Error writing to file")
-            raise  # prints out error message without stopping program
-        return clients
+def main(internal=True):  # internal meaning script used alone,
+    scan(get_arguments(), internal)
+
+    if internal:
+        if len(clients) > 0:
+            try:
+                # if user wants to save result to file
+                want_saved = input("[*] Save results to a file? (y/n): ")
+                want_saved = want_saved.lower()
+                write_file(want_saved == "y" or want_saved == "yes")
+            except KeyboardInterrupt:
+                # print("\r", end=" ")
+                print(print("[-] Closing the application........"))
+                pass
+            except:
+                print("[-] Error writing to file")
+                raise  # prints out error message without stopping program
+    return clients
