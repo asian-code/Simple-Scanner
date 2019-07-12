@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import networkScanner,MacChanger
+import networkScanner, MacChanger
 import os
 import sys
 
@@ -49,9 +49,9 @@ def logo():
  ___/ / / / / / / / /_/ / /  __/_____/__/ / /__/ /_/ / / / / / / /  __/ /    
 /____/_/_/ /_/ /_/ .___/_/\___/     /____/\___/\__,_/_/ /_/_/ /_/\___/_/     
                 /_/  Created by asian-code
-                
+
                    (Special thanks to lin8x)""")
-    print(rr+ul+cyan+"\thttps://www.github.com/asian-code/Simple-Scanner")
+    print(rr + ul + cyan + "\thttps://www.github.com/asian-code/Simple-Scanner")
 
     print(rr + "(" + cyan + bold + "1" + rr + ")\t- " + rr + "Scan IPs/Devices on Network")
     print(rr + "(" + cyan + bold + "2" + rr + ")\t- " + rr + "Scan IPs + Ports(Comming soon)")
@@ -78,20 +78,20 @@ def options():
                 answer = input(cyan + bold + "Simple-Scanner > " + rr)
                 if answer == "1":
                     networkScanner.main()
-                elif answer=="2":
-                    devices=networkScanner.main()
+                elif answer == "2":
+                    devices = networkScanner.main()
                     for i in devices:
-                        print(devices["ip"])
-                    print(rr + bold + "[-] function comming soon"+rr)
+                        print(i["ip"])
+                    print(rr + bold + "[-] function comming soon" + rr)
                 elif answer == "3":
                     MacChanger.main()
-                elif answer.lower() == "exit" or answer == "99" or answer.lower()=="quit":
+                elif answer.lower() == "exit" or answer == "99" or answer.lower() == "quit":
                     quit()
-                elif answer=="clear":
+                elif answer == "clear":
                     clear()
                     logo()
                 else:
-                    print(red + bold + "[-] Invalid command: " +rr+ answer )
+                    print(red + bold + "[-] Invalid command: " + rr + answer)
             except KeyboardInterrupt:
                 quit()
     except KeyboardInterrupt:
