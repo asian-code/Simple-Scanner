@@ -4,7 +4,7 @@
 ## :alien: &nbsp; About Simple Scanner &nbsp; :alien: (Under development)
 
 This is a small tool which allows for easy accessability to :<br>
-* **spoofing your MAC Address -(feature coming soon)**<br>
+* **spoofing your MAC Address**<br>
 * **scanning IP addresses in your network**<br>
 * **stealthy port scanning -(feature coming soon)**
 
