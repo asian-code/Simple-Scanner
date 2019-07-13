@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import networkScanner, MacChanger
+import networkScanner, MacChanger, PortScanner
 import os
 import sys
 
@@ -79,10 +79,11 @@ def options():
                 if answer == "1":
                     networkScanner.main()
                 elif answer == "2":
-                    devices = networkScanner.main()
+                    devices = networkScanner.main(internal=False)
+                    # PortScanner.main(devices)
                     for i in devices:
-                        print(i["ip"])
-                    print(rr + bold + "[-] function comming soon" + rr)
+                        (i["ip"])
+                    print(rr + bold + orange + "[-] function comming soon" + rr)
                 elif answer == "3":
                     MacChanger.main()
                 elif answer.lower() == "exit" or answer == "99" or answer.lower() == "quit":
@@ -95,4 +96,6 @@ def options():
             except KeyboardInterrupt:
                 quit()
     except KeyboardInterrupt:
+        quit()
+    except:
         quit()
